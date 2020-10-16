@@ -70,7 +70,7 @@ a:before {
   right: 0;
   bottom: 0;
   height: 1px;
-  background: blue;
+  background: #1abc9c;
   -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
 }
