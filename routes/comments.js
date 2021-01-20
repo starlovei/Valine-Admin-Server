@@ -18,7 +18,7 @@ router.get("/", function (req, res, next) {
       .then(
         function (results) {
           res.render("comments", {
-            title: process.env.SITE_NAME + "上的评论",
+            title: process.env.SITE_NAME,
             comment_list: results,
             moment: moment,
             zone: String(process.env.LEANCLOUD_REGION),
@@ -30,7 +30,7 @@ router.get("/", function (req, res, next) {
         function (err) {
           if (err.code === 101) {
             res.render("comments", {
-              title: process.env.SITE_NAME + "上的评论",
+              title: process.env.SITE_NAME,
               comment_list: [],
               favicon: process.env.FAVICON
                 ? process.env.FAVICON
